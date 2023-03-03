@@ -1,5 +1,30 @@
 # ANOVA
 Проведение однофакторного дисперсионного анализа + мощность данного критерия, выведенная мною.
+\documentclass[a4paper]{article}
+\usepackage[warn]{mathtext}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{graphicx}
+\usepackage{bigints}
+\graphicspath{{pictures}}
+\usepackage[14pt]{extsizes}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage[%
+    left=0.7in,%
+    right=0.7in,%
+    top=1.0in,%
+    bottom=1.0in,%
+    paperheight=12in,%
+    paperwidth=8.5in%
+]{geometry}%
+
+\title{Поиск ошибки второго рода и мощности критерия в однофакторном дисперсионном анализе (ANOVA)}
+\author{Егор Личак}
+\begin{document}
+\maketitle
 \underline{Определение 1:} Пусть $X_1, X_2,...,X_n$- независимые и одинаково распределенные случайные величины, причем $X_k \sim N(\mu_k, 1)$. Тогда случайная величина
 \begin{center}
     $\sum\limits_{k = 1}^{n} X_k^2 = \chi^{'2}(n, \lambda)$
